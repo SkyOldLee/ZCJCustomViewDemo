@@ -15,6 +15,10 @@
 		D72D45F21DC6F14E00F26189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72D45F01DC6F14E00F26189 /* LaunchScreen.storyboard */; };
 		D72D45FD1DC6F14E00F26189 /* ZCJCustomViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D45FC1DC6F14E00F26189 /* ZCJCustomViewDemoTests.m */; };
 		D72D46081DC6F14E00F26189 /* ZCJCustomViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D46071DC6F14E00F26189 /* ZCJCustomViewDemoUITests.m */; };
+		D72D461A1DC6F53E00F26189 /* tree.png in Resources */ = {isa = PBXBuildFile; fileRef = D72D46191DC6F53E00F26189 /* tree.png */; };
+		D72D46201DC731EB00F26189 /* CircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D461F1DC731EB00F26189 /* CircleImageView.m */; };
+		D72D46231DC73EA000F26189 /* XibCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72D46221DC73EA000F26189 /* XibCircleImageView.m */; };
+		D72D46251DC73EBD00F26189 /* XibCircleImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D72D46241DC73EBD00F26189 /* XibCircleImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		D72D46031DC6F14E00F26189 /* ZCJCustomViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCJCustomViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72D46071DC6F14E00F26189 /* ZCJCustomViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCJCustomViewDemoUITests.m; sourceTree = "<group>"; };
 		D72D46091DC6F14E00F26189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72D46191DC6F53E00F26189 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
+		D72D461E1DC731EB00F26189 /* CircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleImageView.h; sourceTree = "<group>"; };
+		D72D461F1DC731EB00F26189 /* CircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleImageView.m; sourceTree = "<group>"; };
+		D72D46211DC73EA000F26189 /* XibCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibCircleImageView.h; sourceTree = "<group>"; };
+		D72D46221DC73EA000F26189 /* XibCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibCircleImageView.m; sourceTree = "<group>"; };
+		D72D46241DC73EBD00F26189 /* XibCircleImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XibCircleImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		D72D45E11DC6F14E00F26189 /* ZCJCustomViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D72D46151DC6F15300F26189 /* CircleImageView */,
 				D72D45E51DC6F14E00F26189 /* AppDelegate.h */,
 				D72D45E61DC6F14E00F26189 /* AppDelegate.m */,
 				D72D45E81DC6F14E00F26189 /* ViewController.h */,
@@ -117,6 +128,7 @@
 		D72D45E21DC6F14E00F26189 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D72D46191DC6F53E00F26189 /* tree.png */,
 				D72D45E31DC6F14E00F26189 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +150,18 @@
 				D72D46091DC6F14E00F26189 /* Info.plist */,
 			);
 			path = ZCJCustomViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		D72D46151DC6F15300F26189 /* CircleImageView */ = {
+			isa = PBXGroup;
+			children = (
+				D72D461E1DC731EB00F26189 /* CircleImageView.h */,
+				D72D461F1DC731EB00F26189 /* CircleImageView.m */,
+				D72D46211DC73EA000F26189 /* XibCircleImageView.h */,
+				D72D46221DC73EA000F26189 /* XibCircleImageView.m */,
+				D72D46241DC73EBD00F26189 /* XibCircleImageView.xib */,
+			);
+			name = CircleImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +231,7 @@
 				TargetAttributes = {
 					D72D45DE1DC6F14E00F26189 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 3YA54AB2B7;
 						ProvisioningStyle = Automatic;
 					};
 					D72D45F71DC6F14E00F26189 = {
@@ -249,6 +274,8 @@
 				D72D45F21DC6F14E00F26189 /* LaunchScreen.storyboard in Resources */,
 				D72D45EF1DC6F14E00F26189 /* Assets.xcassets in Resources */,
 				D72D45ED1DC6F14E00F26189 /* Main.storyboard in Resources */,
+				D72D46251DC73EBD00F26189 /* XibCircleImageView.xib in Resources */,
+				D72D461A1DC6F53E00F26189 /* tree.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +302,8 @@
 			files = (
 				D72D45EA1DC6F14E00F26189 /* ViewController.m in Sources */,
 				D72D45E71DC6F14E00F26189 /* AppDelegate.m in Sources */,
+				D72D46201DC731EB00F26189 /* CircleImageView.m in Sources */,
+				D72D46231DC73EA000F26189 /* XibCircleImageView.m in Sources */,
 				D72D45E41DC6F14E00F26189 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
 				INFOPLIST_FILE = ZCJCustomViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zcj.ZCJCustomViewDemo;
@@ -433,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3YA54AB2B7;
 				INFOPLIST_FILE = ZCJCustomViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zcj.ZCJCustomViewDemo;
